@@ -19,13 +19,13 @@
 public class HelloWorld { //클래스 블록
 	
 	// HelloWorld 프로그램의 시작포인트
-	/*public static void main(String[] args) {
+	  public static void main(String[] args) {
 		//메소드 블록 (행동)
 		System//클래스
 		.out //변수(맴버)
 		.println("안녕하세요, HelloWorld"); //메소드
 	}
-	*/
+	
 }
 
 
