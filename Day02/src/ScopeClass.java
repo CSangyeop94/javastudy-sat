@@ -1,43 +1,28 @@
 
-public class StringClass 
-{
+//-- 변수의 범위(scope) 
+//-- 범위는 {   } 사이로 한다. 
+public class ScopeClass {
 
- //-- 참조자료형 String 사용하기 
- public static void main(String[] args)
- {
-	 // 1. 문자열 변수선언 
-	 String name = "Hello World";
-	 // 2. 문자열 변수 출력 
-	 System.out.println(name); 
-
-	 String a = "10";
-	 char b = 'a'; // 한문자의 경우에는 
-	 			   // 싱글쿼테이션 사용
-
-	 // 리터럴 사용 
-	 System.out.println("AB");
-	 System.out.println("A	B");
-	 System.out.println("A\tB");
-
-	 // 나는 "이종석" 입니다. 
-	 System.out.println(
-			 	"나는 \"이종석\" 입니다."
-			 );
-
-	 System.out.println(
-			 "나는 '이종석' 입니다."
-			 );
-
-	 // 줄바꿈 \n ( 뉴라인 )
-	 System.out.println("A\n\n\nB");
-
-	 //\n
-
-
-
-
-
-
- }
-
+	static int age = 10;  //-- 클래스 범위에서
+				          // 변수 선언 
+	// (클래스)전역변수
+	// 클래스 변수
+	// 맴버 변수 
+	 
+	
+	public static void main(String[] args) 
+	{
+		int age3 = 200; 
+		// 지역변수 
+		{
+			int age2 = 100; 
+			// 지역변수 
+			System.out.println(age3);
+		}
+		
+		System.out.println(age);
+		//System.out.println(age2); //Error
+		System.out.println(age3);
+	}
+	
 }

@@ -19,8 +19,6 @@
 public class SwitchCaseClass {
 
 	public static void main(String[] args) {
-		
-		do {
 	
 		// 월 - 일 
 		// 1(월),2(화),3,4,5,6,7(일)  
@@ -64,5 +62,4 @@ public class SwitchCaseClass {
 		}
 	}
 
-}
 }
